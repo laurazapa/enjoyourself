@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="EnjoYourself: web para reservar experiencias o actividades de todo tipo y para todas las edades">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="experiencias, actividades, escapada, aventura, pareja, familia">
+		<title>EnjoYourself</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link media="screen and (min-width: 501px) and (max-width:1200px)" rel="stylesheet" type="text/css" href="css/tablet.css">
+		<link media="screen and (max-width: 500px)" rel="stylesheet" type="text/css" href="css/telefono.css">
+		<link rel="shortcut icon" type="image/png" href="imagenes/favicon.png">
+		<link type="text/plain" rel="author" href="http://enjoyourself/humans.txt">
+		<script src="js/galeria.js"></script>
+	</head>
+	<body id="portada">
+
+		<!-- Imagen flotante para volver al portfolio-->
+		<div id="portfolio">
+			<a href= "http://portfoliolaura.getenjoyment.net/"><img src="imagenes/portfolio.png" alt="Volver al portfolio" title="Volver al portfolio"></a>
+		</div>
+		<!-- Fin de la imagen flotante -->
+
+		<figure id="logo">
+			<a href="index.html"><img src="imagenes/logo.jpg" alt="logo"></a>
+		</figure>
+		<nav id="navegacion">
+			<ul class="flex-container">
+				<li class="flex1"><a href="index.html">Inicio</a></li>
+				<li class="flex1"><a href="experiencias.html">Experiencias</a></li>
+				<li class="flex1"><a href="registro.html">Registro</a></li>
+				<li class="flex1"><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		
+		<header id="titulo">
+			<h1>EnjoYourself</h1>	
+		</header>
+		<form id="login" autocomplete="off" method="post">
+			<input type="text" name="user" placeholder="usuario" minlength="4" maxlength="12"  title="Entre 4 y 12 caracteres" required>
+			<input type="password" name="password" placeholder="password" minlength="4" maxlength="12" title="Entre 4 y 12 caracteres">
+			<input type="submit" name="enviar" value="Login">
+		</form>
+
+		<form id="search" method="post" autocomplete="off">
+			<datalist id="opciones">
+				<option value="pareja">
+				<option value="familia">
+				<option value="aventura">
+				<option value="relax">
+				<option value="globo">
+				<option value="gastronomia">
+			</datalist>
+			<input type="search" name="buscar" placeholder="Puedes buscar por experiencia, localidad, edad..." list="opciones">
+			<input type="image" alt="buscar" src="imagenes/lupa.png">
+		</form>
+
+		<div id="izq"></div>
+
+		<div id="migas">
+			<p>Usted está aquí:<a href="index.html"> Inicio</a></p>
+		</div>
+		
+		<section id="bienvenido">
+			<h2>Bienvenido</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum, urna a euismod blandit, ex turpis posuere velit, non aliquam massa tellus at diam. Phasellus lacinia aliquam ultrices. Sed quis leo at dui eleifend elementum. Donec sit amet consectetur risus. Proin ac dolor elit. Ut a sagittis sapien. Nulla vel risus nec lectus ullamcorper tempor a in felis. Donec vel orci quis tellus maximus ornare. Integer lectus justo, venenatis et tempor vitae, imperdiet aliquet lacus. Nunc nisl urna, pharetra eu aliquam sed, dictum vel ligula. Cras et molestie sapien. Morbi iaculis eu diam nec varius. Etiam hendrerit vulputate mi, vitae venenatis ex blandit ut.</p>
+
+			<p>Pellentesque vel feugiat magna, sed venenatis justo. Sed suscipit mollis libero, vel sollicitudin mauris blandit eu. In ullamcorper, turpis quis gravida tempor, felis nibh mattis velit, sit amet rhoncus mi quam non felis. Nunc ut tortor posuere tortor accumsan vulputate. Aliquam eget velit velit. Cras tincidunt ex magna, ac feugiat lectus congue in.</p>
+
+			<ul>
+				<li>Escapadas de todo tipo</li>
+				<li>Mejor precio garantizado</li>
+				<li>Para todas las edades</li>
+				<li>Packs con varias experiencias</li>
+				<li>Vales de regalo</li>
+				<li>¡Y mucho más!</li>
+			</ul>
+		</section>
+
+		<section id="ofertas">
+			<h2>¡Ofertas!</h2>
+			<div class="flex-container">
+				<div class="flex1">
+					<figure>
+						<img src="imagenes/globo.jpg" alt="oferta globo">
+					</figure>
+					<h3>¡Viaja en globo!</h3>
+					<p>Aenean dignissim sapien velit, sit amet vestibulum magna faucibus eget. Pelque vehicula congue risus in ullamcorper. Nulla dapibus eros ac convallis interdum. Vivamus vel vulputate metus. Curabitur ultricies, leo nec pelque facilisis. Etiam varius aliquam tortor, ac dignissim ipsum molestie sed.</p>
+				</div>
+				<div class="flex1">
+					<figure>
+						<img src="imagenes/castillo.jpg" alt="oferta castillo">
+					</figure>
+					<h3>¡Duerme en un castillo!</h3>
+					<p>Sed quis leo at dui eleifend elementum. Donec sit amet consectetur risus. Proin ac dolor elit. Ut a sagittis sapien. Nulla vel risus nec lectus ullamcorper tempor a in felis. Donec vel orci quis. Integer lectus justo. Nunc nisl urna, pharetra eu aliquam sed, dictum vel ligula. Cras et molestie sapien.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="galeria">
+			<h2>Regalos para todos</h2>
+			<div class="flex-container">
+				<figure class="flex1">
+					<img src="imagenes/pareja.jpg" alt="parejas" data-descripcion="Experiencias para parejas" data-lugar="Catalunya" data-fecha="01/01/2000">
+					<figcaption>En pareja</figcaption>
+				</figure>
+				<figure class="flex1">
+					<img src="imagenes/familia.jpg" alt="familias" data-descripcion="Experiencias para toda la familia" data-lugar="Catalunya" data-fecha="01/01/2020">
+					<figcaption>En familia</figcaption>
+				</figure>
+				<figure class="flex1">
+					<img src="imagenes/aventura.jpg" alt="aventura" data-descripcion="Experiencias de aventura" data-lugar="Catalunya" data-fecha="01/01/2010">
+					<figcaption>Aventura</figcaption>
+				</figure>
+				<figure class="flex1">
+					<img src="imagenes/relax.jpg" alt="relax" data-descripcion="Experiencias para desconectar y relajarse" data-lugar="Catalunya" data-fecha="01/01/2018">
+					<figcaption>Relax</figcaption>
+				</figure>
+				<figure class="flex1">
+					<img src="imagenes/gastronomia.jpg" alt="gastronomia" data-descripcion="Experiencias gastronómicas" data-lugar="Catalunya" data-fecha="01/01/2004">
+					<figcaption>Gastronomia</figcaption>
+				</figure>
+			</div>			
+		</section>
+
+		<section id="funcionamiento">
+			<h2>¿Cómo funciona?</h2>
+			<div class="flex-container">
+				<div class="flex1">
+					<figure>
+						<img src="imagenes/elige2.png" alt="Elige">
+					</figure>
+					<h3>1. Elige</h3>					
+					<p>Elige una experiencia de nuestra página o contacta con nosotros para que te aconsejemos.</p>
+				</div>
+				<div class="flex1">
+					<figure>
+						<img src="imagenes/reserva.png" alt="Reserva">
+					</figure>
+					<h3>2. Reserva</h3>					
+					<p>Ponte en contacto con el establecimiento y reserva para cuando quieres la experiencia.</p>
+				</div>
+				<div class="flex1">
+					<figure>
+						<img src="imagenes/disfruta.png" alt="Disfruta">
+					</figure>
+					<h3>3. ¡Disfruta!</h3>
+					<p>Disfruta de tu reserva entregando el cheque-regalo y… ¡vive una experiencia inolvidable!</p>
+				</div>
+			</div>
+		</section>
+
+		<div id="der"></div>
+
+		<section id="mapa" class="flex-container">
+			<div class="flex1">
+				<h2>¿Necesitas ayuda?</h2>
+				<ul>
+					<li><a href="#">Atención al cliente</a></li>
+					<li><a href="#">Información legal</a></li>
+					<li><a href="#">Protección de datos</a></li>
+					<li><a href="#">Condiciones de las reservas</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</div>
+
+			<div class="flex1">
+				<h2>Experiencias</h2>
+				<ul>
+					<li><a href="experiencias.html">Experiencias</a></li>
+					<li><a href="detalles.html">Dormir en un castillo</a></li>
+					<li><a href="#">Reserva una experiencia</a></li>
+					<li><a href="#">Cheques regalo</a></li>
+					<li><a href="#">Packs de experiencias</a></li>
+					
+				</ul>
+			</div>
+
+			<div class="flex1">
+				<h2>Acerca de</h2>
+				<ul>
+					<li><a href="#">¿Quienes somos?</a></li>
+					<li><a href="#">Puntos de venta</a></li>
+					<li><a href="registro.html">Registro</a></li>
+					<li><a href="#">Empleo</a></li>
+					<li><a href="#">Cambios y devoluciones</a></li>
+				</ul>
+			</div>
+
+			<div class="flex1">
+				<h2>Síguenos</h2>
+				<figure>
+					<a href="#"><img src="imagenes/facebook.png" alt="facebook"></a>
+				</figure>
+				<figure>
+					<a href="#"><img src="imagenes/instagram.png" alt="instagram"></a>
+				</figure>
+			</div>
+
+		</section>
+
+		<footer>
+			<details>
+				<summary>Sobre la web y el autor</summary>
+				<p>Web sobre experiencias de todo tipo</p>
+				<p>Por Laura</p>
+			</details>
+		</footer>
+
+	</body>
+</html>

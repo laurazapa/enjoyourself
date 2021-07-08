@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Formulario de registro de EnjoYourself">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="formulario, registrarse, preferencias, información personal">
+		<title>Registro</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link media="screen and (min-width: 501px) and (max-width:1200px)" rel="stylesheet" type="text/css" href="css/tablet.css">
+		<link media="screen and (max-width: 500px)" rel="stylesheet" type="text/css" href="css/telefono.css">
+		<link rel="shortcut icon" type="image/png" href="imagenes/favicon.png">
+		<link type="text/plain" rel="author" href="http://enjoyourself/humans.txt">
+	</head>
+	<body id="registroweb">
+		<!-- Imagen flotante para volver al portfolio-->
+		<div id="portfolio">
+			<a href= "http://portfoliolaura.getenjoyment.net/"><img src="imagenes/portfolio.png" alt="Volver al portfolio" title="Volver al portfolio"></a>
+		</div>
+		<!-- Fin de la imagen flotante -->
+		
+		<figure id="logo">
+			<a href="index.html"><img src="imagenes/logo.jpg" alt="logo"></a>
+		</figure>
+		<nav id="navegacion">
+			<ul class="flex-container">
+				<li class="flex1"><a href="index.html">Inicio</a></li>
+				<li class="flex1"><a href="experiencias.html">Experiencias</a></li>
+				<li class="flex1"><a href="registro.html">Registro</a></li>
+				<li class="flex1"><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		
+		<header id="titulo">
+			<h1>EnjoYourself</h1>	
+		</header>
+		<form id="login" autocomplete="off" method="post">
+			<input type="text" name="user" placeholder="usuario" minlength="4" maxlength="12"  title="Entre 4 y 12 caracteres" required>
+			<input type="password" name="password" placeholder="password" minlength="4" maxlength="12" title="Entre 4 y 12 caracteres">
+			<input type="submit" name="enviar" value="Login">
+		</form>
+
+		<form id="search" method="post" autocomplete="off">
+			<datalist id="opciones">
+				<option value="pareja">
+				<option value="familia">
+				<option value="aventura">
+				<option value="relax">
+				<option value="globo">
+				<option value="gastronomia">
+			</datalist>
+			<input type="search" name="buscar" placeholder="Puedes buscar por experiencia, localidad, edad..." list="opciones">
+			<input type="image" alt="buscar" src="imagenes/lupa.png">
+		</form>
+
+		<div id="izq"></div>
+
+		<div id="migas">
+			<p>Usted está aquí: <a href="index.html"> Inicio</a> - <a href="registro.html"> Registro</a></p>
+		</div>
+
+		<section id="registro" >
+			<h2>Registro</h2>
+			<p>Vivamus congue, quam non maximus aliquam, sem lacus malesuada tellus, ut rutrum ante mi id est. Aenean hendrerit luctus felis ac bibendum. Aenean ut viverra tellus. Fusce ultrices placerat nisi, a euismod ipsum suscipit sit amet. Ut mattis fermentum congue. Pellentesque iaculis orci mauris, at interdum nulla vehicula vulputate. Nam tincidunt sagittis pretium. Pellentesque felis odio, feugiat sit amet sollicitudin ut, ornare et velit. Proin feugiat commodo arcu, at mollis urna ultricies id.</p>
+			<p>Phasellus lacinia aliquam ultrices. Sed quis leo at dui eleifend elementum. Donec sit amet consectetur risus. Proin ac dolor elit. Ut a sagittis sapien. Nulla vel risus nec lectus ullamcorper tempor a in felis. Donec vel orci quis tellus maximus ornare. Integer lectus justo, venenatis et tempor vitae, imperdiet aliquet lacus. Nunc nisl urna, pharetra eu aliquam sed, dictum vel ligula. Cras et molestie sapien. Aliquam eget velit velit. Cras tincidunt ex magna, ac feugiat lectus congue in. Morbi iaculis eu diam nec varius. Etiam hendrerit vulputate mi, vitae venenatis ex blandit ut.</p>
+			<form autocomplete="off" method="post" enctype="multipart/form-data">
+				<div class="flex-container">
+					<fieldset class="flex1">
+						<legend>Información personal</legend>
+						<label for="nombre">Nombre:</label>
+						<input id="nombre" type="text" name="nombre" minlength="3" maxlength="16" required title="Entre 3 y 16 caracteres" placeholder="Laura" autofocus><br>
+						<label for="apellidos">Apellidos:</label>
+						<input id="apellidos" type="text" name="apellidos" minlength="3" maxlength="16" required title="Entre 3 y 16 caracteres" placeholder="Mozota Laborda"><br>
+						<label for="dni">DNI:</label>
+						<input id="dni" type="text" name="dni" placeholder="48569987F"><br>
+						<label for="user">Usuario:</label>
+						<input id="user" type="text" name="user" required minlength="4" maxlength="10" title="Entre 4 y 10 caracteres" placeholder="Lauravi"><br>
+						<label for="contraseña">Contraseña:</label>
+						<input id="contraseña" type="password" name="password" required minlength="4" maxlength="10" title="Entre 4 y 10 caracteres" placeholder="636363"><br>
+
+						<label>Fecha nacimiento:</label><br>
+						<label for="dia" class="short">Dia</label>
+						<select id="dia" name="dia">
+							<script>
+								for(let i=1; i<=31; i++)
+									document.write('<option value="'+i+'">'+i+'</option>');
+							</script>
+						</select><br>
+						<label for="mes" class="short">Mes</label>
+						<select id="mes" name="mes">
+							<script>
+								var meses=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+								for(let i=0; i<12; i++)
+									document.write('<option value="'+i+'">'+meses[i]+'</option>');
+							</script>
+						</select><br>
+						<label for="anyo" class="short">Año</label>
+						<select id="anyo" name="anyo">
+							<script>
+								for(let i=2021; i>=1900; i--)
+									document.write('<option value="'+i+'">'+i+'</option>');
+							</script>
+						</select><br>
+
+						<label for="email">Email:</label>
+						<input id="email" type="email" name="email" required title="Email real" placeholder="lauravi@gmail.com"><br>
+						<label>Sexo</label><br>
+						<input id="hombre" type="radio" name="sexo" value="H">
+						<label for="hombre">Hombre</label><br>
+						<input id="mujer" type="radio" name="sexo" value="M" checked>
+						<label for="mujer">Mujer</label><br>
+						<input id="noresponde" type="radio" name="sexo" value="N">
+						<label for="noresponde">No responde</label><br>
+					</fieldset>
+					<fieldset class="flex1">
+						<legend>Preferencias</legend>
+						<label>Experiencias para:</label><br>
+						<input type="checkbox" name="parejas" value="1" checked>
+						<label>Parejas</label><br>
+						<input type="checkbox" name="familia" value="1">
+						<label>Familia</label><br>
+						<input type="checkbox" name="pequeños" value="1">
+						<label>Pequeños</label><br>
+						<input type="checkbox" name="adultos" value="1">
+						<label>Adultos</label><br>
+
+						<label>Tipo de experiencia:</label><br>
+						<input type="checkbox" name="aventura" value="1" checked>
+						<label>Aventura</label><br>
+						<input type="checkbox" name="relax" value="1">
+						<label>Relax</label><br>
+						<input type="checkbox" name="romantica" value="1">
+						<label>Romántica</label><br>
+						<input type="checkbox" name="rural" value="1">
+						<label>Rural</label><br>
+
+						<label>Donde:</label><br>
+						<input type="checkbox" name="bcn" value="1" checked>
+						<label>Barcelona</label><br>
+						<input type="checkbox" name="tar" value="1">
+						<label>Tarragona</label><br>
+						<input type="checkbox" name="lle" value="1">
+						<label>Lleida</label><br>
+						<input type="checkbox" name="gir" value="1">
+						<label>Girona</label><br>
+
+						<label>¿Quieres recibir información?</label><br>
+						<input type="checkbox" name="recibir">
+						<label>Quiero recibir ofertas y promociones</label><br>
+
+						<input type="checkbox" name="terminos" required>
+						<label>Acepto los términos y condiciones</label>
+					</fieldset>
+				</div>		
+				<div id="submit">
+					<input type="submit" name="registrarse" value="Registrarse">
+					<input type="reset" name="reset" value="Reset">
+				</div>
+				
+			</form>
+		</section>
+
+
+		<div id="der"></div>
+		
+		<footer>
+			<details>
+				<summary>Sobre la web y el autor</summary>
+				<p>Web sobre experiencias de todo tipo</p>
+				<p>Por Laura</p>
+			</details>
+		</footer>
+
+	</body>
+</html>

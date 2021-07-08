@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Listado de experiencias de todo tipo por categorias de EnjoYourself">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="experiencias, actividades, escapadas, listado">
+		<title>Experiencias</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link media="screen and (min-width: 501px) and (max-width:1200px)" rel="stylesheet" type="text/css" href="css/tablet.css">
+		<link media="screen and (max-width: 500px)" rel="stylesheet" type="text/css" href="css/telefono.css">
+		<link rel="shortcut icon" type="image/png" href="imagenes/favicon.png">
+		<link type="text/plain" rel="author" href="http://enjoyourself/humans.txt">
+	</head>
+	<body id="listado">
+		<!-- Imagen flotante para volver al portfolio-->
+		<div id="portfolio">
+			<a href= "http://portfoliolaura.getenjoyment.net/"><img src="imagenes/portfolio.png" alt="Volver al portfolio" title="Volver al portfolio"></a>
+		</div>
+		<!-- Fin de la imagen flotante -->
+		
+		<figure id="logo">
+			<a href="index.html"><img src="imagenes/logo.jpg" alt="logo"></a>
+		</figure>
+		<nav id="navegacion">
+			<ul class="flex-container">
+				<li class="flex1"><a href="index.html">Inicio</a></li>
+				<li class="flex1"><a href="experiencias.html">Experiencias</a></li>
+				<li class="flex1"><a href="registro.html">Registro</a></li>
+				<li class="flex1"><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		
+		<header id="titulo">
+			<h1>EnjoYourself</h1>	
+		</header>
+		<form id="login" autocomplete="off" method="post">
+			<input type="text" name="user" placeholder="usuario" minlength="4" maxlength="12"  title="Entre 4 y 12 caracteres" required>
+			<input type="password" name="password" placeholder="password" minlength="4" maxlength="12" title="Entre 4 y 12 caracteres">
+			<input type="submit" name="enviar" value="Login">
+		</form>
+
+		<form id="search" method="post" autocomplete="off">
+			<datalist id="opciones">
+				<option value="pareja">
+				<option value="familia">
+				<option value="aventura">
+				<option value="relax">
+				<option value="globo">
+				<option value="gastronomia">
+			</datalist>
+			<input type="search" name="buscar" placeholder="Puedes buscar por experiencia, localidad, edad..." list="opciones">
+			<input type="image" alt="buscar" src="imagenes/lupa.png">
+		</form>
+
+		<div id="izq"></div>
+
+		<div id="migas">
+			<p>Usted está aquí: <a href="index.html"> Inicio</a> - <a href="experiencias.html"> Experiencias</a></p>
+		</div>
+
+		<section id="listadoexp">
+			<h2>Listado de experiencias</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sapien nibh, vehicula dictum euismod vel, faucibus in ligula. Ut blandit et libero at feugiat. Pellentesque non mattis purus. Nunc volutpat lacus sem, vitae interdum odio condimentum et. Proin tincidunt, ligula nec efficitur hendrerit, enim ex luctus dolor, quis mollis nibh justo a erat. Phasellus laoreet sed dolor id malesuada. Nam tempus neque sit amet suscipit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus blandit aliquet gravida.</p>
+			<section>
+				<h3>Ideales para parejas</h3>
+				<div class="flex-container">
+					<figure class="flex1">
+						<a href="detalles.html"><img src="imagenes/castillo.jpg" alt="castillo"></a>
+						<figcaption><a href="detalles.html">Dormir en un castillo</a></figcaption>
+					</figure>
+					<figure class="flex1">
+						<a href="#"><img src="imagenes/relax.jpg" alt="roommiedo"></a>
+						<figcaption><a href="#">Spa y relax</a></figcaption>
+					</figure>
+					<figure class="flex1">
+						<a href="#"><img src="imagenes/cenamedieval.jpg" alt="cenamedieval"></a>
+						<figcaption><a href="#">Cena medieval</a></figcaption>
+					</figure>					
+				</div>
+			</section>
+
+			<section>
+				<h3>De aventura</h3>
+				<div class="flex-container">
+					<figure class="flex1">
+						<a href="#"><img src="imagenes/globo.jpg" alt="globo"></a>
+						<figcaption><a href="#">Viaje en globo</a></figcaption>
+					</figure>
+					<figure class="flex1">
+						<a href="#"><img src="imagenes/lasertag.jpg" alt="lasertag"></a>
+						<figcaption><a href="#">Laser tag</a></figcaption>
+					</figure>
+					<figure class="flex1">
+						<a href="#"><img src="imagenes/aventura.jpg" alt="rafting"></a>
+						<figcaption><a href="#">Rafting</a></figcaption>
+					</figure>	
+				</div>
+							
+			</section>
+
+			<section>
+				<h3>Para los más atrevidos</h3>
+				<div class="flex-container">				
+					<figure class="flex1">
+						<a href="#"><img src="imagenes/moto.jpg" alt="moto"></a>
+						<figcaption><a href="#">Motos de montaña</a></figcaption>
+					</figure>
+					<figure class="flex1">
+						<a href="#"><img src="imagenes/roommiedo.jpg" alt="roommiedo"></a>
+						<figcaption><a href="#">Escape room de miedo</a></figcaption>
+					</figure>
+					<figure class="flex1">
+						<a href="#"><img src="imagenes/puenting.jpg" alt="puenting"></a>
+						<figcaption><a href="#">Puenting</a></figcaption>
+					</figure>
+				</div>
+			</section>
+			
+				
+		</section>
+
+		
+		<div id="der"></div>
+
+		<footer>
+			<details>
+				<summary>Sobre la web y el autor</summary>
+				<p>Web sobre experiencias de todo tipo</p>
+				<p>Por Laura</p>
+			</details>
+		</footer>
+
+	</body>
+</html>

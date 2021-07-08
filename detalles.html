@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Detalles sobre la experiencia de dormir en un castillo">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="castillo, medieval, escapada, habitación, cena">
+		<title>Castillo</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link media="screen and (min-width: 501px) and (max-width:1200px)" rel="stylesheet" type="text/css" href="css/tablet.css">
+		<link media="screen and (max-width: 500px)" rel="stylesheet" type="text/css" href="css/telefono.css">
+		<link rel="shortcut icon" type="image/png" href="imagenes/favicon.png">
+		<link type="text/plain" rel="author" href="http://enjoyourself/humans.txt">
+	</head>
+	<body id="detalles">
+		<!-- Imagen flotante para volver al portfolio-->
+		<div id="portfolio">
+			<a href= "http://portfoliolaura.getenjoyment.net/"><img src="imagenes/portfolio.png" alt="Volver al portfolio" title="Volver al portfolio"></a>
+		</div>
+		<!-- Fin de la imagen flotante -->
+		<figure id="logo">
+			<a href="index.html"><img src="imagenes/logo.jpg" alt="logo"></a>
+		</figure>
+		<nav id="navegacion">
+			<ul class="flex-container">
+				<li class="flex1"><a href="index.html">Inicio</a></li>
+				<li class="flex1"><a href="experiencias.html">Experiencias</a></li>
+				<li class="flex1"><a href="registro.html">Registro</a></li>
+				<li class="flex1"><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		
+		<header id="titulo">
+			<h1>EnjoYourself</h1>	
+		</header>
+		<form id="login" autocomplete="off" method="post">
+			<input type="text" name="user" placeholder="usuario" minlength="4" maxlength="12"  title="Entre 4 y 12 caracteres" required>
+			<input type="password" name="password" placeholder="password" minlength="4" maxlength="12" title="Entre 4 y 12 caracteres">
+			<input type="submit" name="enviar" value="Login">
+		</form>
+
+		<form id="search" method="post" autocomplete="off">
+			<datalist id="opciones">
+				<option value="pareja">
+				<option value="familia">
+				<option value="aventura">
+				<option value="relax">
+				<option value="globo">
+				<option value="gastronomia">
+			</datalist>
+			<input type="search" name="buscar" placeholder="Puedes buscar por experiencia, localidad, edad..." list="opciones">
+			<input type="image" alt="buscar" src="imagenes/lupa.png">
+		</form>
+
+		<div id="izq"></div>
+
+		<div id="migas">
+			<p>Usted está aquí: <a href="index.html"> Inicio</a> - <a href="experiencias.html"> Experiencias</a> - <a href="detalles.html"> Dormir en un castillo</a></p>
+		</div>
+
+		<section id="detallescastillo">
+			<h2>Dormir en un castillo</h2>
+			<div class="flex-container">
+				<div class="flex3">
+					<h3>Detalles</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eleifend faucibus quam non sollicitudin. Sed nec justo non dui ultricies bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam mattis elementum tincidunt. Integer maximus risus libero, sed fermentum enim elementum eget. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In ac congue massa. Nullam tristique ut lacus eu suscipit. Mauris urna felis, sagittis quis erat eget, porttitor porta justo. Suspendisse sodales et tellus eget condimentum. Integer quis faucibus ligula, id tincidunt orci.</p>
+					<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur dignissim, enim eu hendrerit venenatis, nisl lacus posuere urna, non commodo mauris nunc eget mauris. Duis justo magna, viverra non ornare a, placerat vitae nisi. Suspendisse sed ornare odio. Proin nisl nisl, dapibus quis eros eu, facilisis posuere sapien. Integer nunc dolor, tristique sit amet feugiat tempus, facilisis sed est. Sed non mattis purus. Aliquam eget nibh ligula. Nullam et felis ut urna suscipit aliquet ut rutrum ex. Aliquam purus orci, ullamcorper a augue ac, pharetra dignissim ex. Aenean scelerisque sagittis est quis imperdiet.</p>
+				</div>
+
+				<div class="flex1">
+					<h3>¿Qué incluye?</h3>
+					<p>Etiam mattis elementum tincidunt. Integer maximus risus libero, sed fermentum enim elementum eget. Suspe potenti. Pelesque habitant morbi egestas. Suspese sodales et tellus eget condime. Integer quis faucibus ligula, id tincidunt orci.</p>
+					<ul>
+						<li>1 noche en habitación superior</li>
+						<li>Cena degustación para dos</li>
+						<li>Desayuno buffet</li>
+						<li>Visita guiada por el castillo</li>
+					</ul>
+					<p id="precio">¡Por solo 150€!</p>
+				</div>				
+			</div>
+			
+		</section>
+
+		<section id="fotoscastillo">
+			<h3>Fotos</h3>
+			<div class="flex-container">
+				<figure class="flex1">
+					<img src="imagenes/castillo.jpg" alt="castillo">
+				</figure>
+				<figure class="flex1">
+					<img src="imagenes/habitacion.jpg" alt="habitacion">
+				</figure>
+				<figure class="flex1">
+					<img src="imagenes/cena.jpg" alt="cena">
+				</figure>
+			</div>			
+		</section>
+
+		<section id="videoscastillo">
+			<h3>Vídeos</h3>
+			<div class="flex-container">
+				<video class="flex1" src="videos/video.mp4" controls="controls" autoplay="autoplay" muted loop>Tu navegador no es compatible con vídeo</video>
+				<iframe class="flex1" src="https://www.youtube.com/embed/1MG7SeVH0ps" allowfullscreen></iframe>
+			</div>			
+		</section>
+
+		
+		<div id="der"></div>
+
+		<footer>
+			<details>
+				<summary>Sobre la web y el autor</summary>
+				<p>Web sobre experiencias de todo tipo</p>
+				<p>Por Laura</p>
+			</details>
+		</footer>
+
+	</body>
+</html>

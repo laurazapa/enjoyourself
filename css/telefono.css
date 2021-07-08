@@ -1,0 +1,165 @@
+/* TELÉFONO */
+section{
+  padding: 1rem;
+}
+body{
+  grid-template-columns: auto;
+}
+#portada{
+  grid-template-areas: 
+    'logo'
+    'ti'
+    'login'
+    'nav'
+    'se'
+    'mi'
+    'bi'
+    'of'
+    'ga'
+    'fu'
+    'ma'
+    'fo';
+}
+
+/* inicio de la hoja de estilos */
+#logo{
+  background-color: rgba(0,0,0,0);
+  text-align: center;
+  margin: auto;
+}
+#logo img{
+  width: 12%;
+  margin: 0.3rem;
+}
+
+#titulo{
+  border-radius: 0px;
+  box-shadow: 2px 2px 7px rgb(60,60,60);
+}
+#titulo h1{
+  font-size: 3rem;
+}
+
+#login{
+  text-align: center;
+}
+#login input{
+  width: 30%;
+  display: inline;
+  padding: 0.2rem;
+}
+#login input[type="submit"]{
+  width: 20%;
+  border-radius: 4px;
+  background: linear-gradient(to bottom, white, grey);
+}
+
+#navegacion{
+  font-size: 0.8rem; 
+  padding: 4% 0%;
+}
+
+
+#search{
+  padding: 2%;
+}
+#search input[type="search"]{
+  width: 85%;
+  font-size: 0.8rem;
+}
+
+#galeria figure.grande img{
+  width: 85%;
+}
+#galeria figure.grande figcaption{
+  width: 85%;
+  font-size: 1.3rem;
+}
+
+/* REGISTRO */
+#registroweb{
+  grid-template-areas:
+    'logo'
+    'ti'
+    'login'
+    'nav'
+    'se'
+    'mi'
+    're'
+    'fo';
+}
+#registro form fieldset{
+  margin: 2%;
+}
+
+/* CONTACTO */
+#contactoweb{
+  grid-template-areas:
+    'logo'
+    'ti'
+    'login'
+    'nav'
+    'se'
+    'mi'
+    'co'
+    'da'
+    'fo';
+}
+#contacto input[type="submit"], #contacto input[type="reset"]{
+  margin: 10px;
+}
+#datos iframe{
+  width: 100%;
+}
+
+/* LISTADO DE EXPERIENCIAS */
+#listado{
+  grid-template-areas:
+    'logo'
+    'ti'
+    'login'
+    'nav'
+    'se'
+    'mi'
+    'li'
+    'fo';
+}
+
+#listadoexp figure img{
+  min-width: 200px;
+}
+
+/* DETALLES DE UNA EXPERIENCIA: DORMIR EN UN CASTILLO */
+#detalles{
+  grid-template-areas:
+    'logo'
+    'ti'
+    'login'
+    'nav'
+    'se'
+    'mi'
+    'de'
+    'focast'
+    'videocast'
+    'fo';
+}
+#detallescastillo div div:first-of-type{
+  margin-right: 0%;
+  min-width: 250px;
+}
+#videoscastillo video{
+  min-width: 250px;
+}
+#videoscastillo iframe{
+  min-width: 250px;
+}
+
+#izq, #der{
+  display: none;
+}
+
+/* IMAGEN FLOTANTE PARA VOLVER AL PORTFOLIO */
+
+#portfolio img{
+  width: 23%;
+}

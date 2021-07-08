@@ -1,0 +1,123 @@
+/* TABLET */
+body{
+  grid-template-columns: 20% 30% 30% auto;
+}
+#portada{
+  grid-template-areas: 
+    'nav nav nav nav'
+    'logo ti ti login'
+    'se se se se'
+    'mi mi mi mi'
+    'bi bi of of'
+    'ga ga ga ga'
+    'fu fu fu fu'
+    'ma ma ma ma'
+    'fo fo fo fo';
+}
+
+/* inicio de la hoja de estilos */
+#logo{
+  background-color: rgba(0,0,0,0);
+  text-align: center;
+  margin: auto;
+}
+#logo img{
+  width: 50%;
+}
+
+#titulo h1{
+  font-size: 3rem;
+}
+
+#login input{
+  width: 70%;
+  padding: 0.2rem;
+}
+
+#search{
+  padding: 1%;
+}
+#search input[type="search"]{
+  width: 50%;
+  font-size: 0.8rem;
+}
+
+#bienvenido{
+  padding: 1rem;
+}
+#ofertas{
+  padding: 1rem;
+}
+
+#galeria, #funcionamiento{
+  padding: 1rem;
+}
+
+#galeria figure.grande img{
+  width: 55%;
+}
+#galeria figure.grande figcaption{
+  width: 55%;
+  padding: 0.3rem;
+  font-size: 1.1rem;
+}
+
+/* REGISTRO */
+#registroweb{
+  grid-template-areas: 
+    'nav nav nav nav'
+    'logo ti ti login'
+    'se se se se'
+    'mi mi mi mi'
+    're re re re'
+    'fo fo fo fo';
+}
+
+/* CONTACTO */
+#contactoweb{
+  grid-template-areas:
+    'nav nav nav nav'
+    'logo ti ti login'
+    'se se se se'
+    'mi mi mi mi'
+    'co co da da'
+    'fo fo fo fo';
+}
+#contacto input[type="submit"], #contacto input[type="reset"]{
+  margin: 10px;
+}
+
+/* LISTADO DE EXPERIENCIAS */
+#listado{
+  grid-template-areas:
+    'nav nav nav nav'
+    'logo ti ti login'
+    'se se se se'
+    'mi mi mi mi'
+    'li li li li'
+    'fo fo fo fo';
+}
+
+/* DETALLES DE UNA EXPERIENCIA: DORMIR EN UN CASTILLO */
+#detalles{
+  grid-template-areas:
+    'nav nav nav nav'
+    'logo ti ti login'
+    'se se se se'
+    'mi mi mi mi'
+    'de de de de'
+    'focast focast focast focast'
+    'videocast videocast videocast videocast'
+    'fo fo fo fo';
+}
+
+#izq, #der{
+  display: none;
+}
+
+/* IMAGEN FLOTANTE PARA VOLVER AL PORTFOLIO */
+
+#portfolio img{
+  width: 15%;
+}
+
